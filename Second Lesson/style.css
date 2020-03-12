@@ -1,1 +1,31 @@
-/* Тут щось буде */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: green;
+}
+.title {
+    text-align: center;
+    font-family: Arial;
+    color: #884f9e;
+}
+img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px dashed pink;
+}
+p {
+    font-family: Arial;
+    font-size: 16px;
+}
+#nanachi {
+    background-color: brown;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    font-family: Helvetica;
+}
