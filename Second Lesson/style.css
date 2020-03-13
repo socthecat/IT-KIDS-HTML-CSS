@@ -1,31 +1,38 @@
+/* Базове обнулення стилів. * - селектор, який вибирає усі теги на сторінці. */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* зовнішній відступ */
+    padding: 0; /* внутрішній відступ */
+    box-sizing: border-box; /* включення рамок і відступів в розмір блоків */
 }
+/* Стилі для всього документу. Тут можна задати фон, шрифт і т.д. */
 html, body {
-    background-color: green;
+    background-color: #ecffde; /* Колір фону */
 }
+/* Стилі для тегів з класом title */
 .title {
-    text-align: center;
-    font-family: Arial;
-    color: #884f9e;
+    text-align: center; /* вирівнювання тексту по центру */
+    font-family: Arial; /* задання шрифту Arial */
+    color: #884f9e; /* задання кольору тексту */
 }
+/* Стилі для всіх тегів img */
 img {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 5px dashed pink;
+    width: 250px; /* задання ширини картинки */
+    display: block; /* за замовчуванням тег-картинка строковий, 
+    але властивістю display це можна змінити. в данному випадку ми робимо його блоковим */
+    margin: 0 auto; /* зовнішній відступ зверху і знизу - 0, з боків - автоматично, це розташовує блок по центру */
+    border-radius: 50%; /* закруглення країв. 50% робить їх повністю круглими. також можна задавати значення в пікселях */
+    border: 5px dashed pink; /* штрихована (dashed) рамка товщиною в 5 пікселів рожевого кольору */
 }
+/* Стилі для всіх тегів p */
 p {
-    font-family: Arial;
-    font-size: 16px;
+    font-family: Arial; /* задання шрифту Arial */
+    font-size: 16px; /* задання розміру тексту в 16 пікселів */
 }
+/* Стилі для тегу з ідентифікатором nanachi */
 #nanachi {
-    background-color: brown;
-    padding: 10px;
-    margin: 20px;
-    color: white;
-    font-family: Helvetica;
+    background-color: brown; /* Колір фону */
+    padding: 10px; /* внутрішній відступ в 10 пікселів зі всіх боків */
+    margin: 20px; /* зовнішній відступ в 20 пікселів зі всіх боків */
+    color: white; /* задання білого кольору тексту */
+    font-family: Helvetica; /* задання шрифту Helvetica */
 }
