@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* animation: shadowing 0.01s linear infinite alternate;  */
+}
+ul {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    list-style: none;
+
+}
+.logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(161, 81, 161);
+    font-size: 30px;
+    animation: shadowing 0.5s linear infinite alternate; 
+}
+
+.logo:hover {
+    animation-play-state: paused;
+}
+header {
+    background-color: pink;
+    padding: 20px 7px;
+    box-shadow: 1px 2px 5px rgba(128, 0, 128, 0.192);
+}
+header, nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: rgb(121, 67, 121);
+}
+nav {
+    width: 30vw;
+}
+.wrapper {
+    width: 100vw;
+    min-height: calc(100vh - 60px)
+}
+footer {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 78, 68);
+    justify-content: center;
+    background-color: rgb(57, 168, 131);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-container img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+@keyframes shadowing {
+    from {
+        text-shadow: 0 0 0px rgb(207, 55, 55);
+        transform: scale(1);
+    }
+    to {
+        text-shadow: 0px 0px 25px rgb(161, 81, 161);
+        transform: scale(1.25);
+    }
+  }
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
